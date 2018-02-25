@@ -1,0 +1,11 @@
+.header {
+	text-align: center;
+}
+.header h1 {
+	color: #FF0000;
+}
+.test {
+	text-align: center;
+    background: #00FF00;
+    padding: 50px 0;
+}
