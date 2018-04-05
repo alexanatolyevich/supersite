@@ -9,8 +9,9 @@
 	height: 50px;
 	position: fixed;
 	z-index: 1;
+	border: 0.5px solid #A9A9A9;
 }
-	.header-up div{
+	.header-up div, .header-up ul{
 		float: left;
 	}
 	.header-in-logo{
@@ -36,7 +37,7 @@
 			margin-bottom: 30PX;
 		}
 		.header-in-logo img{
-			max-width:75%;
+			max-width:72%;
 
 
 		}
@@ -66,35 +67,63 @@
 		height: 50px;
 		padding-top: 15px;
 		padding-left: 10px;
+		list-style-type: none;
+
 	}
+		.header-in-userbar li {
+			display: inline;
+			position: relative;
+		}
+
 		.header-in-userbar i{
 			color: #A9A9A9;
 			cursor: pointer;
 			padding-left: 20px;
 		}
+		.header-in-userbar em{
+			display: none;
+			position: absolute;
+			top: 26px;
+			background: orange;
+			padding: 5px;
+			border: 0.5px solid #fff
+			left: -10px;
+			width: 90px;
+		}
 
 	/*end*/
 
 /*start*/
-.left-menu-div{
+.left-menu{
 	width: 19%;
 	height: 800px;
-	background: black;
 	float: left;
 	position: fixed;
 	z-index: 0;
 	margin-top: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+.left-menu.hide {
+	display: none;
+}
+	.left-menu-div ul{
+		list-style: none;
+		cursor: pointer;
 	}
-	
-.header-down{
-	width: 81%;
-	height: 50px;
-	background: purple;
-	float: left;
-	position: fixed;
-	margin-top: 50px;
-	margin-left: 19%;
-	z-index: 1;
+		.left-menu-div ul li{
+			width: 100%;
+			padding: 10px;
+			margin left: 10px;
+			padding-right: 10px;
+			color: 	#A9A9A9;
+		}	
+.left-menu-div h2{
+	font-size: 16px;
+	color: gray;
+	cursor: pointer;
+
 }
 /*end*/
 .main-block{
@@ -102,18 +131,40 @@
 	background: #EDEDED;
 	float: left;
 	margin-left: 19%;
-	margin-top: 100px;
+	margin-top: 50px;
 	padding-bottom: 50px;
 }
-	.main-in-block{
-		width: 95%;
-		height: 800px;
-		background: white;
-		margin-top: 10px;
-		margin-left: 2.5%;
-		margin-right: 2.5%;
-		box-shadow: 0 0 2px rgba(0,0,0,0.2);
-	}
+
+.main-block.full {
+	width: 100%;
+	margin-left: 0;
+}
+.main-in-block{
+	width: 95%;
+	height: 800px;
+	background: white;
+	margin-top: 10px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	box-shadow: 0 0 2px rgba(0,0,0,0.2);
+
+}
+.main-in-block h1{
+	font-size: 16px;
+	padding: 10px;
+	float: right;
+}
+.time {
+	float: left;
+	font-size: 16px;
+	padding: 10px;
+}
+.description {
+	display: none;
+}
+.description.open {
+	display: block;
+}
 footer{
 	width: 81%;
 	height: 150px;
