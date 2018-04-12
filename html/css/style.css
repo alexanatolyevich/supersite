@@ -125,6 +125,11 @@
 	cursor: pointer;
 
 }
+.left-menu-div a{
+	font-size: 16px;
+	color: gray;
+	cursor: pointer;
+}
 /*end*/
 .main-block{
 	width: 81%;

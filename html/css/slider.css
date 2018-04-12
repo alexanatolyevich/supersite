@@ -1,0 +1,28 @@
+.sliderphantom{
+	width: 500px;
+    margin: 15px auto;
+ 
+   
+}
+.sliderphantom img{
+	width: 100%;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 70px;
+    color: #00569C;
+    top: -13px;
+    background: white;
+
+   
+}
+.slick-prev{
+	left: -75px;
+}
+.slick-next:before {
+	font-size: 70px;
+    color: #00569C;
+    top: -13px;
+    background: white;
+    right: 535px;
+ 
+}
